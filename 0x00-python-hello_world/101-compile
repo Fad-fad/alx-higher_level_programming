@@ -1,0 +1,14 @@
+#!/bin/bash
+
+pyfile=$PYFILE
+pyfilec="${pyfile%.py}.pyc"
+
+echo "Compiling $pyfile ..."
+python -m py_compile "$pyfile"
+
+if [ -f "$pyfilec" ]; then
+    echo "Compilation successful!"
+else
+    echo "Compilation failed."
+    exit 1
+fin
