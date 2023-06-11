@@ -6,3 +6,4 @@ def print_reversed_list_integer(my_list=[]):
         my_list[i] = my_list[j]
         my_list[j] = res
         j++
+    return my_list
