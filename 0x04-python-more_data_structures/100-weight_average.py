@@ -9,4 +9,3 @@ def weight_average(my_list=[]):
         sum_weights += weight
     weighted_average = sum_scores / sum_weights
     return weighted_average
-
